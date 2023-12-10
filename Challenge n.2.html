@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form a input fiels</title>
+</head>
+<form onsubmit="alert('Registrazione inviata')">
+<body>
+    <h1>Registrati ed entra nella community di Music!</h1>
+    <div>
+        <input type="text" placeholder="Il tuo nome" />
+    </div>
+    <div>
+        <input type="email" placeholder="Il tuo indirizzo email" />
+    </div>
+    <div>
+        <input type="password" placeholder="La tua password " />
+    </div>
+    <div>
+        <input type="number" placeholder="Il tuo numero di telefono" />
+    </div>
+    <div>
+        <p>Ora la tua data di nascita</p>
+        <input type="date" placeholder="La tua data di nascita" />
+    </div>
+    <div>
+    <p>Quali sono i tuoi generi musicali preferiti?</p>
+     </div>
+    <div>
+        <input type="text" placeholder="Pop" />
+    </div> 
+    <input type="checkbox" />
+    <div>
+    <input type="text" placeholder="Rock" />
+    </div>
+    <input type="checkbox" />
+    <div>
+        <input type="text" placeholder="Jazz" />
+    </div>
+        <input type="checkbox" />
+    <div>
+        <input type="text" placeholder="Rap/Trap" />
+    </div>
+        <input Type="checkbox" />
+    <div>
+        <input tytpe="text" placeholder="Classic" />
+    </div>
+        <input type="checkbox" />
+        <p> </p>
+        <input type="radio"/> Accetto termini e condizioni.
+        <button type="submit"> Invia registrazione</button>
+</form>
+
+
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+</body>
+</html>
