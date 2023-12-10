@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form a input fiels</title>
+</head>
+<form onsubmit="alert('Registrazione inviata')">
+<body>
+    <h1>Registrati ed entra nella community di Music!</h1>
+    <div>
+        <input type="text" placeholder="Il tuo nome" />
+    </div>
+    <div>
+        <input type="email" placeholder="Il tuo indirizzo email" />
+    </div>
+    <div>
+        <input type="password" placeholder="La tua password " />
+    </div>
+    <div>
+        <input type="number" placeholder="Il tuo numero di telefono" />
+    </div>
+    <div>
+        <p>Ora la tua data di nascita</p>
+        <input type="date" placeholder="La tua data di nascita" />
+    </div>
+    <div>
+    <p>Quali sono i tuoi generi musicali preferiti?</p>
+    </div>
+    <div>
+    <input type="text" placeholder="Pop" />
+    </div> 
+    <input type="checkbox" />
+    <div>
+    <input type="text" placeholder="Rock" />
+    </div>
+    <input type="checkbox" />
+    <div>
+        <input type="text" placeholder="Jazz" />
+    </div>
+        <input type="checkbox" />
+    <div>
+        <input type="text" placeholder="Rap/Trap" />
+    </div>
+        <input Type="checkbox" />
+    <div>
+        <input tytpe="text" placeholder="Classic" />
+    </div>
+        <input type="checkbox" />
+        <p> </p>
+        <input type="radio"/> Accetto termini e condizioni.
+        <button type="submit"> Invia registrazione</button>
+</form>
+</body>
+</html>
